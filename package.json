@@ -89,13 +89,15 @@
     "sign:bitpay-macos": "gpg -u 1112CFA1 --output dist/BitPay.dmg.sig --detach-sig dist/BitPay.dmg",
     "sign:bitpay-linux": "gpg -u 1112CFA1 --output dist/BitPay-linux.zip.sig --detach-sig dist/BitPay-linux.zip",
     "sign:bitpay-windows": "gpg -u 1112CFA1 --output dist/BitPay.exe.sig --detach-sig dist/BitPay.exe",
-    "verify:bitpay-desktop": "gpg --verify dist/BitPay-linux.zip.sig dist/BitPay-linux.zip; gpg --verify dist/BitPay.exe.sig dist/BitPay.exe; gpg --verify dist/BitPay.dmg.sig dist/BitPay.dmg"
+    "verify:bitpay-desktop": "gpg --verify dist/BitPay-linux.zip.sig dist/BitPay-linux.zip; gpg --verify dist/BitPay.exe.sig dist/BitPay.exe; gpg --verify dist/BitPay.dmg.sig dist/BitPay.dmg",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@angular/animations": "5.2.10",
     "@angular/common": "5.2.10",
     "@angular/compiler": "5.2.10",
-    "@angular/compiler-cli": "5.2.10",
+    "@angular/compiler-cli": "9.0.0",
     "@angular/core": "5.2.10",
     "@angular/forms": "5.2.10",
     "@angular/http": "5.2.10",
@@ -166,7 +168,7 @@
     "ionic-angular": "3.9.10",
     "ionic-image-loader": "6.3.2",
     "ionicons": "3.0.0",
-    "lodash": "4.17.19",
+    "lodash": "4.17.20",
     "ngx-barcode": "0.2.4",
     "ngx-markdown": "1.5.2",
     "ngx-qrcode2": "0.1.0",
@@ -177,7 +179,8 @@
     "text-encoding": "0.6.4",
     "text-mask-core": "5.1.2",
     "web-animations-js": "2.3.1",
-    "zone.js": "0.8.26"
+    "zone.js": "0.8.26",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.12.4",
@@ -271,5 +274,6 @@
   },
   "prettier": {
     "singleQuote": true
-  }
+  },
+  "snyk": true
 }
