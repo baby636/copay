@@ -180,8 +180,8 @@
     "zone.js": "0.8.26"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "0.12.4",
-    "@angular/cli": "7.1.4",
+    "@angular-devkit/build-angular": "13.0.0",
+    "@angular/cli": "11.2.18",
     "@biesbjerg/ngx-translate-extract": "2.3.4",
     "@ionic-native-mocks/android-fingerprint-auth": "2.0.12",
     "@ionic-native-mocks/file": "2.0.12",
