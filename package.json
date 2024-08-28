@@ -219,7 +219,7 @@
     "tslint": "5.8.0",
     "tslint-config-prettier": "1.7.0",
     "typescript": "2.6.2",
-    "webpack": "3.12.0"
+    "webpack": "5.94.0"
   },
   "cordova": {
     "plugins": {
